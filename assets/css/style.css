@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+
+
+.faq-container{
+    background-color: white;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.faq-container__title {
+    font-weight: 600;
+}
+
+.add-faq {
+    background-color: #362F74;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    
+}
+
+.faq-content {
+    background-color: #FAFAFE;
+    border: 1px solid rgba(113, 100, 226, 0.1); 
+}
+
+.faq-content__info {
+    font-weight: 600;
+    font-size: 22px;
+    color: #3A3A3A;
+}
+
+.crud {
+    font-size: 18px;
+}
+
+.text-red {
+    color: #FF3838;
+}
+
+.text-blue {
+    color: #362F74;
+}
+
+@media screen and (max-width:768px) {
+    .faq-container__title {
+        font-size: 20px;
+    }
+
+    .faq-content__info {
+        font-weight: 600;
+        font-size: 16px;
+        color: #3A3A3A;
+    }
+
+    .crud {
+        font-size: 15px;
+    }
+
+    .crud + svg {
+        width: 16px;
+    }
+
+}

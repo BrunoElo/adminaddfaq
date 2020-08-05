@@ -1,0 +1,54 @@
+/* BIG SCREEN INNER PAGE NAV STARTS  */
+
+:root {
+  /*Declared the CSS variable*/
+  --sideBar-active: #362f74;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+.big-inner-nav {
+  display: none;
+}
+
+.header__link {
+  color: #362F74;
+
+  font-size: 16px;
+}
+
+.header__link-active {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--sideBar-active);
+  border-bottom: 3px solid var(--sideBar-active);
+}
+
+.header__link:hover {
+  color: #0056b3; 
+  text-decoration: none; 
+  font-weight: 600;
+ border-bottom: 3px solid var(--sideBar-active);
+}
+
+@media all and (min-width:768px) {
+  .big-inner-nav {
+    display: block;
+
+  }
+
+  .sidebar__lists li:hover::after {
+    /* border-right: 3px solid black; */
+    content: '';
+    width: 15px;
+    height: 25px;
+    border-right: 3px solid var(--sideBar-active);
+    position: absolute;
+    right: 0;
+  }
+}
+
+/* BIG SCREEN INNER PAGE NAV ENDS  */
